@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @ConfigurationProperties(prefix = "leaf",ignoreUnknownFields = true)
-@PropertySource("classpath:leaf.properties")
+// @PropertySource("classpath:leaf.properties")
 public class LeafSpringBootProperties {
     private String name;
     private Segment segment;
