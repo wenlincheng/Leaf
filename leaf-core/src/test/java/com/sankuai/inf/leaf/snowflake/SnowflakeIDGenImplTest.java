@@ -14,7 +14,7 @@ public class SnowflakeIDGenImplTest {
     public void testGetId() throws Exception {
         Properties properties = PropertiesLoaderUtils.loadProperties(new ClassPathResource("leaf.properties"));
 
-        IDGen idGen = new SnowflakeIDGenImpl(properties.getProperty("leaf.zk.list"), 8080);
+        IDGen idGen = new SnowflakeIDGenImpl(properties.getProperty("leaf.zk.list"), Integer.parseInt(properties.getProperty("leaf.zk.port")));
         for (int i = 1; i < 1000; ++i) {
             Result r = idGen.get("a");
             System.out.println(r);
