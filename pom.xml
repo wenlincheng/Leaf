@@ -42,7 +42,7 @@
         <maven.compiler.version>3.5.1</maven.compiler.version>
         <mybatis.version>3.5.3</mybatis.version>
         <perf4j.version>0.9.16</perf4j.version>
-        <curator.version>5.1.0</curator.version>
+        <curator.version>4.0.1</curator.version>
         <slf4j.version>1.7.2</slf4j.version>
         <druid.version>1.1.20</druid.version>
         <jackson-databind.version>2.9.6</jackson-databind.version>
@@ -143,11 +143,6 @@
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
                 <version>${log4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot</artifactId>
-                <version>2.0.3.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>mysql</groupId>
